@@ -3,22 +3,12 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Example app.
 
-* Ruby version
+Create your own user registration and session etc. helper method.
 
-* System dependencies
+import bootstrap.
 
-* Configuration
+All CRUD actions.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+authenticate_user!
