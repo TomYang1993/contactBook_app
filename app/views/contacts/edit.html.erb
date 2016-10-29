@@ -1,0 +1,8 @@
+<h1>Please update your contacts ! !</h1>
+<br>
+<%= form_tag("/contacts/#{@contact.id}", method: "patch") do %>
+
+<%= render 'form' %>
+
+  <%= submit_tag("Update your new contact!") %>
+<% end %>

@@ -1,0 +1,19 @@
+<h1>All your contacts are here!!</h1>
+
+<% @contact.each do |contact| %>
+<ul>
+  <br>
+  <li><a href="/contacts/<%= contact.id %>">The Contact <%= contact.id %></a></li>
+  <li><%= contact.first_name %></li>
+  <li><%= contact.middle_name %></li>
+  <li><%= contact.last_name %></li>
+  <li><%= contact.email %></li>
+  <li><%= contact.bio %></li>
+  <li><%= contact.add_jap_prefix %></li>
+  <li><%= contact.latitude %></li>
+  <li><%= contact.longitude %></li>
+</ul>
+<br>
+<% end %>
+
+<%= link_to "Create a new contact !", "/contacts/new" %>

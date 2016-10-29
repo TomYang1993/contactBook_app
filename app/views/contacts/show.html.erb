@@ -1,0 +1,26 @@
+<h1>Contact <%= @contact.full_name %></h1>
+
+<h2>The contact belongs to :   </h2>
+<% @contact.groups.each do |contact| %>
+<h3><li><%= contact.name  %></li></h3>
+<% end  %>
+<h2>The details are:</h2>
+<ul>
+  <li><%= @contact.first_name %></li>
+  <li><%= @contact.middle_name %></li>
+  <li><%= @contact.last_name %></li>
+  <li><%= @contact.email %></li>
+  <li><%= @contact.bio %></li>
+  <li><%= @contact.add_jap_prefix %></li>
+  <li><%= @contact.latitude %></li>
+  <li><%= @contact.longitude %></li>
+</ul>
+
+<h2><a href="/contacts">Go Back Home ! </a></h2>
+
+<p><%= link_to "Update the contact", "/contacts/#{@contact.id}/edit" %>
+
+<h3>Updated at <%= @contact.friendly_timing %></h3>
+
+
+<p><%= link_to "Delete the contact", "/contacts/#{@contact.id}", method: 'delete' %>
